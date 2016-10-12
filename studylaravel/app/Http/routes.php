@@ -37,3 +37,8 @@ Route::group(['prefix'=>'thucdon'],function(){
 Route::get('testviewfolder',function(){
   return view('layout.sub.test');
 });
+View::share('title','lap trinh laravel test viewshare');
+
+Route::get('testviewshare',function(){
+  return view('layout.sub.viewshare');
+});
